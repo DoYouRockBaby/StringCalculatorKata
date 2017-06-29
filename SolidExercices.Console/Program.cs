@@ -20,11 +20,15 @@ namespace SolidExercices.Console
             prioritaryOperators.Add(new ProductOperator());
             prioritaryOperators.Add(new DivisionOperator());
 
+            //add the operations to the calculator
             calculator.Operators.Add(prioritaryOperators);
             calculator.Operators.Add(simpleOperators);
 
-            var calculatorTrainer = new CalculatorTrainer();
-            calculatorTrainer.Run(calculator);
+            //predefine the operations
+            string[] operations = {"1+2,3", "2 x 3,6", "6-1-3,8", "6,6/3", "6/0", "not an operation", "a+1", "12", ""};
+
+            //Run the operations
+            CalculatorTrainer.Run(calculator, operations);
             System.Console.ReadKey();
         }
     }
