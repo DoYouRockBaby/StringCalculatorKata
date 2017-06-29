@@ -17,7 +17,7 @@ A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer 
 Réponses aux questions posées
 -----------------------------
 
-Q1)
+Q1) Pour éviter les if/switch en masse, j'ai crée une structure basé sur l'abstraction des opérations via une interface : Operator/IOperator qui est implementé par des classes représentants les différentes opérations possibles
 
 Q2)
 
