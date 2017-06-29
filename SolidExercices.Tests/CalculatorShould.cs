@@ -94,13 +94,11 @@ namespace SolidExercices.Tests
             var calculator = InstantiateCalculator();
             var result = calculator.Calculate("1+2,8/1,4");
             Check.That(result).IsEqualTo(3m);
-        }
 
-        [Test]
-        public void CalculateComposedOperationWithPriorities2()
-        {
-            var calculator = InstantiateCalculator();
-            var result = calculator.Calculate("1x4+2,8/1,4+3");
+            result = calculator.Calculate("2,8/1,4 + 1");
+            Check.That(result).IsEqualTo(3m);
+
+            result = calculator.Calculate("1x4+2,8/1,4+3");
             Check.That(result).IsEqualTo(9m);
         }
 
