@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolidExercices.Operator
 {
-    class MinusOperator : IOperator
+    public class MinusOperator : IOperator
     {
         private readonly char _symbol = '-';
         public char Symbol

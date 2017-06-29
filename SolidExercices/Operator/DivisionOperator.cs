@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolidExercices.Operator
 {
-    class DivisionOperator : IOperator
+    public class DivisionOperator : IOperator
     {
         private readonly char _symbol = '/';
         public char Symbol

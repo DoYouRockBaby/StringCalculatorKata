@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolidExercices.Operator
 {
-    class AddOperator : IOperator
+    public class AddOperator : IOperator
     {
         private readonly char _symbol = '+';
         public char Symbol

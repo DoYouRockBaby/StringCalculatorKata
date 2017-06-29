@@ -10,22 +10,11 @@ namespace SolidExercices
     public class Calculator
     {
         //First list is used to determine priorities, second contains operators
-        private List<List<IOperator>> _operators;
+        public List<List<IOperator>> Operators { get; set; }
 
         public Calculator()
         {
-            _operators = new List<List<IOperator>>();
-            
-            List<IOperator> simpleOperators = new List<IOperator>();
-            simpleOperators.Add(new AddOperator());
-            simpleOperators.Add(new MinusOperator());
-
-            List<IOperator> prioritaryOperators = new List<IOperator>();
-            prioritaryOperators.Add(new ProductOperator());
-            prioritaryOperators.Add(new DivisionOperator());
-            
-            _operators.Add(simpleOperators);
-            _operators.Add(prioritaryOperators);
+            Operators = new List<List<IOperator>>();
         }
         public decimal Calculate(string operation)
         {
@@ -37,7 +26,7 @@ namespace SolidExercices
             }
 
             //We execute operation for each operator type
-            foreach(var operatorGroup in _operators)
+            foreach (var operatorGroup in Operators)
             {
                 char[] symbols = new char[operatorGroup.Count];
 
