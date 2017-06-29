@@ -47,16 +47,6 @@ namespace SolidExercices.Tests
         }
 
         [Test]
-        public void SumException()
-        {
-            var calculator = InstantiateCalculator();
-            Assert.Throws<IncorrectExpressionException>(delegate
-            {
-                calculator.Calculate("1+");
-            });
-        }
-
-        [Test]
         public void CalculateASimpleMinus()
         {
             var calculator = InstantiateCalculator();

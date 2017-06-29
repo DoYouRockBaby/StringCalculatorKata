@@ -16,16 +16,16 @@ A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer 
 
 Réponses aux questions posées
 -----------------------------
+J'ai crée une structure basé sur l'abstraction des opérations via une interface : Operator/IOperator qui est implementé par des classes représentants les différentes opérations possibles
+Q1) Pour éviter les if/switch en masse, il faut privilégier la factorisation du code
 
-Q1) Pour éviter les if/switch en masse, j'ai crée une structure basé sur l'abstraction des opérations via une interface : Operator/IOperator qui est implementé par des classes représentants les différentes opérations possibles
+Q2) J'abstrait la liste des opérations
 
-Q2)
+Q3) Je rends ma classe modulaire
 
-Q3)
+Q4) Cette classe n'est pas assez modulaire, elle implemente elle même le Calculator et les calculs a réaliser
 
-Q4)
+Q5) Je factorise ma classe
 
-Q5)
-
-Q6)
+Q6) Je factorise ma classe
  
