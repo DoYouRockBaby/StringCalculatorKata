@@ -46,8 +46,11 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorTrainer.cs" />
     <Compile Include="Exception\IncorrectExpressionException.cs" />
+    <Compile Include="Operator\DivisionOperator.cs" />
     <Compile Include="Operator\IOperator.cs" />
     <Compile Include="Operator\AddOperator.cs" />
+    <Compile Include="Operator\MinusOperator.cs" />
+    <Compile Include="Operator\ProductOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

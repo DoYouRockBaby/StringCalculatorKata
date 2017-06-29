@@ -6,6 +6,7 @@
         {
             var calculatorTrainer = new CalculatorTrainer();
             calculatorTrainer.Run();
+            System.Console.ReadKey();
         }
     }
 }

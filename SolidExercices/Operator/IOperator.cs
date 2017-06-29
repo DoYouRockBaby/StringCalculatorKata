@@ -1,4 +1,4 @@
-﻿namespace SolidExercices.Operation
+﻿namespace SolidExercices.Operator
 {
     interface IOperator
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using SolidExercices.Exception;
-using SolidExercices.Operation;
+using SolidExercices.Operator;
 
 namespace SolidExercices
 {
@@ -17,6 +17,9 @@ namespace SolidExercices
             _operators = new List<List<IOperator>>();
             List<IOperator> simpleOperators = new List<IOperator>();
             simpleOperators.Add(new AddOperator());
+            simpleOperators.Add(new MinusOperator());
+            simpleOperators.Add(new ProductOperator());
+            simpleOperators.Add(new DivisionOperator());
             _operators.Add(simpleOperators);
         }
         public decimal Calculate(string operation)
