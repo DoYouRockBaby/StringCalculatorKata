@@ -15,12 +15,17 @@ namespace SolidExercices
         public Calculator()
         {
             _operators = new List<List<IOperator>>();
+            
             List<IOperator> simpleOperators = new List<IOperator>();
             simpleOperators.Add(new AddOperator());
             simpleOperators.Add(new MinusOperator());
-            simpleOperators.Add(new ProductOperator());
-            simpleOperators.Add(new DivisionOperator());
+
+            List<IOperator> prioritaryOperators = new List<IOperator>();
+            prioritaryOperators.Add(new ProductOperator());
+            prioritaryOperators.Add(new DivisionOperator());
+            
             _operators.Add(simpleOperators);
+            _operators.Add(prioritaryOperators);
         }
         public decimal Calculate(string operation)
         {
