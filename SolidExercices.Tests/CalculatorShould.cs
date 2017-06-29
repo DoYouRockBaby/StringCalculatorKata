@@ -1,5 +1,6 @@
 ﻿using NFluent;
 using NUnit.Framework;
+using SolidExercices.Exception;
 
 namespace SolidExercices.Tests
 {
